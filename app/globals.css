@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-inter: 'Inter', sans-serif;
+
+    --cream: #EDEBE6;
+    --cream-dark: #E4DDD5;
+    --cream-deep: #D8D0C6;
+
+    --tan: #A08060;
+    --tan-light: #C4A882;
+    --tan-muted: #7A6A50;
+
+    /* warm brown kept only for body text — it reads well against cream */
+    --text-body: #6B5A48;
+
+    /* green replaces all dark brown accents */
+    --green: #4A6B58;        /* buttons, key accents */
+    --green-hover: #3A5448;  /* button hover */
+    --green-deep: #1E3028;   /* dark section backgrounds */
+    --green-footer: #131D18; /* footer */
+    --text-dark: #1A2822;    /* headings — very dark green, reads as near-black */
+
+    /* alias used by CSS classes below */
+    --section-dark: var(--green);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--cream);
+    color: var(--text-dark);
+    font-family: var(--font-inter, 'Inter', sans-serif);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-cormorant, 'Cormorant Garamond', serif);
+    font-weight: 400;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.btn-dark {
+  display: inline-block;
+  font-family: var(--font-inter, sans-serif);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--cream);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--green);
+  padding: 14px 40px;
+  width: fit-content;
+  transition: background-color 0.25s;
+}
+
+.btn-dark:hover {
+  background-color: var(--green-hover);
+}
+
+.btn-light {
+  display: inline-block;
+  font-family: var(--font-inter, sans-serif);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--green-deep);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--cream);
+  padding: 16px 52px;
+  transition: background-color 0.25s;
+}
+
+.btn-light:hover {
+  background-color: var(--tan-light);
+}
+
+.nav-link {
+  font-family: var(--font-inter, sans-serif);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--tan-muted);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--text-dark);
+}
+
+.footer-link {
+  font-family: var(--font-inter, sans-serif);
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--tan-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--tan-light);
+}
+
+.service-card-btn {
+  display: inline-block;
+  font-family: var(--font-inter, sans-serif);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--cream);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--green);
+  padding: 12px 32px;
+  transition: background-color 0.25s;
+}
+
+.service-card-btn:hover {
+  background-color: var(--green-hover);
 }
