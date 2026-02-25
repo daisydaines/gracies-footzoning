@@ -1,18 +1,18 @@
 const services = [
   {
     name: "Basic Reflexology",
-    duration: "30 min",
+    duration: "$25",
     description:
       "A focused session covering the primary signal points of the foot — a gentle introduction, ideal for first-timers or those seeking a lighter touch.",
-    details: ["One-on-one session", "Full foot coverage", "Lehi, UT studio"],
+    details: ["One-on-one session", "Full foot coverage", "30 minute session"],
     bg: "#EDEBE6",
   },
   {
     name: "Extended Reflexology",
-    duration: "60 min",
+    duration: "$45",
     description:
       "A complete session working through the full anatomical map of the foot — deeper, slower, and more thorough for a full-body restoration.",
-    details: ["One-on-one session", "Full body energy mapping", "Lehi, UT studio"],
+    details: ["One-on-one session", "Full body energy mapping", "60 minute session"],
     bg: "#E4DDD5",
   },
 ];
