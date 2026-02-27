@@ -88,13 +88,13 @@ export default function Services() {
                 </h3>
                 <span
                   style={{
-                    fontFamily: "var(--font-inter, sans-serif)",
-                    fontSize: "0.7rem",
-                    color: "#A08060",
-                    letterSpacing: "0.1em",
-                    marginTop: "0.3rem",
+                    fontFamily: "var(--font-cormorant, serif)",
+                    fontWeight: 300,
+                    fontSize: "1.6rem",
+                    color: "var(--text-dark)",
                     marginLeft: "1rem",
                     whiteSpace: "nowrap",
+                    lineHeight: 1.1,
                   }}
                 >
                   {service.duration}

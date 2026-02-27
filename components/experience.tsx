@@ -1,5 +1,3 @@
-"use client";
-
 const panels = [
   {
     num: "01",
@@ -55,7 +53,7 @@ export default function Experience() {
       </div>
 
       {/* Oval cards on cream */}
-      <div style={{ backgroundColor: "var(--cream)" }} className="px-6 py-16 md:px-16 md:py-24">
+      <div style={{ backgroundColor: "var(--cream)" }} className="px-6 py-10 md:px-16 md:py-24">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {panels.map((panel, i) => (
             <div key={i} className="flex flex-col items-center gap-7">
@@ -63,7 +61,7 @@ export default function Experience() {
               <div
                 style={{
                   width: "100%",
-                  maxWidth: 300,
+                  maxWidth: "clamp(180px, 55vw, 300px)",
                   aspectRatio: "3 / 4",
                   borderRadius: 9999,
                   overflow: "hidden",

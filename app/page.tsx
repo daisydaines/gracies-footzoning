@@ -5,6 +5,7 @@ import Experience from "@/components/experience";
 import Ticker from "@/components/ticker";
 import Services from "@/components/services";
 import About from "@/components/about";
+import Testimonials from "@/components/testimonials";
 import Booking from "@/components/booking";
 import Footer from "@/components/footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Ticker />
       <Services />
       <About />
+      {/* <Testimonials /> */}
       <Booking />
       <Footer />
     </main>
