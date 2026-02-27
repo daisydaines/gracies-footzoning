@@ -8,7 +8,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1800&q=80')",
+            "url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1800&q=80')",
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
@@ -49,7 +49,7 @@ export default function Hero() {
             fontWeight: 300,
             fontSize: "clamp(3.4rem, 10vw, 7rem)",
             lineHeight: 1.0,
-            color: "#1A2822",
+            color: "#2a342a",
             marginBottom: "1.25rem",
           }}
         >

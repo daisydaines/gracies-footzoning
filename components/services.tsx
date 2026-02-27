@@ -1,19 +1,27 @@
 const services = [
   {
-    name: "Basic Reflexology",
-    duration: "$25",
+    name: "Kids Reflexology",
+    duration: "$19",
     description:
-      "A focused session covering the primary signal points of the foot — a gentle introduction, ideal for first-timers or those seeking a lighter touch.",
-    details: ["One-on-one session", "Full foot coverage", "30 minute session"],
+      "A gentle, shorter session designed for little ones — the same caring touch as the basic session, paced and sized just right for kids.",
+    details: ["One-on-one session", "Full foot coverage", "20 minute session"],
     bg: "#EDEBE6",
   },
   {
+    name: "Basic Reflexology",
+    duration: "$29",
+    description:
+      "A focused session covering the primary signal points of the foot — a gentle introduction, ideal for first-timers or those seeking a lighter touch.",
+    details: ["One-on-one session", "Full foot coverage", "30 minute session"],
+    bg: "#E4DDD5",
+  },
+  {
     name: "Extended Reflexology",
-    duration: "$45",
+    duration: "$49",
     description:
       "A complete session working through the full anatomical map of the foot — deeper, slower, and more thorough for a full-body restoration.",
     details: ["One-on-one session", "Full body energy mapping", "60 minute session"],
-    bg: "#E4DDD5",
+    bg: "#D8D0C6",
   },
 ];
 
@@ -34,6 +42,7 @@ export default function Services() {
               color: "#A08060",
               letterSpacing: "0.25em",
               textTransform: "uppercase",
+              marginBottom: "0.75rem",
             }}
           >
             Services
@@ -43,7 +52,7 @@ export default function Services() {
               fontFamily: "var(--font-cormorant, serif)",
               fontWeight: 300,
               fontSize: "clamp(2rem, 4vw, 3rem)",
-              color: "#1A2822",
+              color: "#2a342a",
               lineHeight: 1.1,
             }}
           >
@@ -53,7 +62,7 @@ export default function Services() {
 
         {/* Cards */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-px"
+          className="grid grid-cols-1 md:grid-cols-3 gap-px"
           style={{ backgroundColor: "rgba(160,128,96,0.2)" }}
         >
           {services.map((service) => (
@@ -71,7 +80,7 @@ export default function Services() {
                     fontFamily: "var(--font-cormorant, serif)",
                     fontWeight: 400,
                     fontSize: "1.75rem",
-                    color: "#1A2822",
+                    color: "#2a342a",
                     lineHeight: 1.1,
                   }}
                 >
@@ -131,6 +140,7 @@ export default function Services() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="service-card-btn"
+                style={{ marginTop: "auto" }}
               >
                 Book this session
               </a>

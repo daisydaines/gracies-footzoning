@@ -2,7 +2,7 @@ export default function Booking() {
   return (
     <section
       className="px-6 py-16 md:px-16 md:py-24 text-center"
-      style={{ backgroundColor: "#1E3028" }}
+      style={{ backgroundColor: "#5c6a57" }}
     >
       <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
         <p
@@ -42,7 +42,7 @@ export default function Booking() {
             maxWidth: 440,
           }}
         >
-          Sessions are held in a calm, private studio in Lehi, UT. Choose a
+          Sessions are held in the comfort of your own home. Choose a
           time that works for you and Gracie will take care of the rest.
         </p>
 
@@ -52,7 +52,7 @@ export default function Booking() {
           rel="noopener noreferrer"
           className="btn-light"
         >
-          Schedule on Calendly
+          Schedule here
         </a>
       </div>
     </section>

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#131D18" }}>
+    <footer style={{ backgroundColor: "#3d4a38" }}>
       <div style={{ height: 1, backgroundColor: "rgba(160,128,96,0.2)" }} />
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 px-6 py-8 md:px-16 md:py-10">
@@ -59,7 +59,7 @@ export default function Footer() {
             fontFamily: "var(--font-inter, sans-serif)",
             fontSize: "0.6rem",
             fontWeight: 300,
-            color: "#3A5448",
+            color: "#7e8b76",
             letterSpacing: "0.08em",
           }}
         >

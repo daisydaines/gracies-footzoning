@@ -24,7 +24,7 @@ export default function WhatIsFootzoning() {
               fontWeight: 300,
               fontSize: "clamp(2.2rem, 5vw, 3.2rem)",
               lineHeight: 1.1,
-              color: "#1A2822",
+              color: "#2a342a",
               marginBottom: "1.25rem",
             }}
           >
@@ -66,9 +66,10 @@ export default function WhatIsFootzoning() {
         {/* Image — above text on mobile */}
         <div className="relative min-h-[260px] md:min-h-0 order-first md:order-last">
           <img
-            src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=900&q=80"
+            src="https://images.unsplash.com/photo-1706795033796-0057e5864e6d?w=900&q=80"
             alt="Foot care treatment"
             className="w-full h-full object-cover"
+            loading="lazy"
             style={{ display: "block" }}
           />
         </div>

@@ -16,12 +16,12 @@
     /* warm brown kept only for body text — it reads well against cream */
     --text-body: #6B5A48;
 
-    /* green replaces all dark brown accents */
-    --green: #4A6B58;        /* buttons, key accents */
-    --green-hover: #3A5448;  /* button hover */
-    --green-deep: #1E3028;   /* dark section backgrounds */
-    --green-footer: #131D18; /* footer */
-    --text-dark: #1A2822;    /* headings — very dark green, reads as near-black */
+    /* sage green palette */
+    --green: #7e8b76;        /* buttons, key accents */
+    --green-hover: #6d7965;  /* button hover */
+    --green-deep: #3f4d3b;   /* btn-light text, deep accents */
+    --green-footer: #3d4a38; /* footer */
+    --text-dark: #2a342a;    /* headings — very dark green, reads as near-black */
 
     /* alias used by CSS classes below */
     --section-dark: var(--green);

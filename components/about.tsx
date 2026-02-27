@@ -5,9 +5,10 @@ export default function About() {
         {/* Image */}
         <div className="relative min-h-[260px] md:min-h-0 order-last md:order-first">
           <img
-            src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=900&q=80"
+            src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=900&q=80"
             alt="Gracie - Footzone practitioner"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
             style={{ display: "block" }}
           />
         </div>
@@ -34,7 +35,7 @@ export default function About() {
               fontWeight: 300,
               fontSize: "clamp(2rem, 3.5vw, 2.8rem)",
               lineHeight: 1.15,
-              color: "#1A2822",
+              color: "#2a342a",
               marginBottom: "1.25rem",
             }}
           >

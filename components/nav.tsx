@@ -63,7 +63,12 @@ export default function Nav() {
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-10">
             {links.map(({ label, href }) => (
-              <a key={label} href={href} className="nav-link">
+              <a
+                key={label}
+                href={href}
+                className="nav-link"
+                style={!scrolled ? { color: "rgba(237,235,230,0.82)" } : undefined}
+              >
                 {label}
               </a>
             ))}
@@ -72,7 +77,15 @@ export default function Nav() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-dark"
-              style={{ padding: "10px 24px", fontSize: "0.65rem" }}
+              style={{
+                padding: "10px 24px",
+                fontSize: "0.65rem",
+                ...(!scrolled && {
+                  backgroundColor: "rgba(237,235,230,0.18)",
+                  color: "rgba(237,235,230,0.9)",
+                  outline: "1px solid rgba(237,235,230,0.4)",
+                }),
+              }}
             >
               Book
             </a>
