@@ -1,6 +1,6 @@
 const services = [
   {
-    name: "Kids Reflexology",
+    name: "Kids Footzone",
     duration: "$19",
     description:
       "A gentle, shorter session designed for little ones — the same caring touch as the basic session, paced and sized just right for kids.",
@@ -8,7 +8,7 @@ const services = [
     bg: "#EDEBE6",
   },
   {
-    name: "Basic Reflexology",
+    name: "Basic Footzone",
     duration: "$29",
     description:
       "A focused session covering the primary signal points of the foot — a gentle introduction, ideal for first-timers or those seeking a lighter touch.",
@@ -16,7 +16,7 @@ const services = [
     bg: "#E4DDD5",
   },
   {
-    name: "Extended Reflexology",
+    name: "Extended Footzone",
     duration: "$49",
     description:
       "A complete session working through the full anatomical map of the foot — deeper, slower, and more thorough for a full-body restoration.",
