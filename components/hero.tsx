@@ -8,11 +8,14 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1800&q=80')",
+            "url('/essential_oil.png')",
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
       />
+
+      {/* Dim layer */}
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.5)" }} />
 
       {/* Mobile overlay */}
       <div

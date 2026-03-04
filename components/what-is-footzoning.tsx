@@ -66,12 +66,13 @@ export default function WhatIsFootzoning() {
         {/* Image — above text on mobile */}
         <div className="relative min-h-[260px] md:min-h-0 order-first md:order-last">
           <img
-            src="https://images.unsplash.com/photo-1706795033796-0057e5864e6d?w=900&q=80"
+            src="/home_heel.png"
             alt="Foot care treatment"
             className="w-full h-full object-cover"
             loading="lazy"
             style={{ display: "block" }}
           />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.28)" }} />
         </div>
       </div>
     </section>

@@ -5,12 +5,13 @@ export default function About() {
         {/* Image */}
         <div className="relative min-h-[260px] md:min-h-0 order-last md:order-first">
           <img
-            src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=900&q=80"
+            src="/home_single.png"
             alt="Gracie - Footzone practitioner"
             className="w-full h-full object-cover object-center"
             loading="lazy"
             style={{ display: "block" }}
           />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.28)" }} />
         </div>
 
         {/* Text */}

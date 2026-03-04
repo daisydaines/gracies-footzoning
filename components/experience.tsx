@@ -3,19 +3,19 @@ const panels = [
     num: "01",
     title: "To Arrive",
     body: "Come as you are. Wear comfortable clothing, arrive a few minutes early, and leave the outside world at the door. No preparation needed.",
-    img: "https://plus.unsplash.com/premium_photo-1723532450234-b1ab127c0cba?w=800&q=80",
+    img: "/yoga.png",
   },
   {
     num: "02",
     title: "To Release",
     body: "Sink into the session. Your practitioner will work methodically through each signal point, gently guiding your body toward balance and ease.",
-    img: "https://plus.unsplash.com/premium_photo-1661767920769-0397d5c02c33?w=800&q=80",
+    img: "/top_down_feet.png",
   },
   {
     num: "03",
     title: "To Renew",
     body: "Leave feeling lighter. Many clients notice improved sleep, clearer energy, and a deep sense of calm — continuing to unfold in the days after.",
-    img: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=800&q=80",
+    img: "/footzone.png",
   },
 ];
 
@@ -60,6 +60,7 @@ export default function Experience() {
               {/* Pill oval image */}
               <div
                 style={{
+                  position: "relative",
                   width: "100%",
                   maxWidth: "clamp(180px, 55vw, 300px)",
                   aspectRatio: "3 / 4",
@@ -74,6 +75,7 @@ export default function Experience() {
                   loading="lazy"
                   style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                 />
+                <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.28)" }} />
               </div>
 
               {/* Text below */}
